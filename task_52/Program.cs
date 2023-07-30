@@ -21,7 +21,9 @@ Console.WriteLine();
 
 void ReleaseMatrix(int[,] matrix)
 {
-int i,j;
+Console.Write("Среднее арифметическое каждого столбца: ");
+int i = matrix.GetLength(0);
+int j = matrix.GetLength(1);
 Random rand = new Random();
 for (j = 0; j < matrix.GetLength(1); j++)
 {
@@ -30,7 +32,7 @@ for (i = 0; i < matrix.GetLength(0); i++)
 {
 sum = sum + matrix[i,j];
 }
-Console.Write ($"{sum/(i):F1}; \t");
+Console.Write ($"{sum/matrix.GetLength(0):F1}; ");
 }
 }
 
