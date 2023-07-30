@@ -22,13 +22,11 @@ Console.WriteLine();
 void ReleaseMatrix(int[,] matrix)
 {
 Console.Write("Среднее арифметическое каждого столбца: ");
-int i = matrix.GetLength(0);
-int j = matrix.GetLength(1);
-Random rand = new Random();
-for (j = 0; j < matrix.GetLength(1); j++)
+
+for (int j = 0; j < matrix.GetLength(1); j++)
 {
 double sum = 0;
-for (i = 0; i < matrix.GetLength(0); i++)
+for (int i = 0; i < matrix.GetLength(0); i++)
 {
 sum = sum + matrix[i,j];
 }
